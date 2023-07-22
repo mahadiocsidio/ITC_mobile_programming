@@ -35,7 +35,9 @@ class _SplashScreenState extends State<SplashScreen> {
               colors: [Color(0xff374C97), Colors.black],
             ),
           ),
-        child: Center(child: Image.asset('assets/mp.png')) // Ganti path sesuai dengan lokasi gambar Anda) .
+        child: Center(
+          child: Image.asset('assets/logo.png')  // Ganti path sesuai dengan lokasi gambar Anda
+          )
       ),
     );
   }
