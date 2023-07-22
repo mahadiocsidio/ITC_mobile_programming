@@ -26,8 +26,16 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       // Ganti background color dan tata letak sesuai kebutuhan.
       backgroundColor: Color.fromARGB(90, 255, 255, 255),
-      body: Center(
-        child: Image.asset('assets/mp.png'), // Ganti path sesuai dengan lokasi gambar Anda.
+      body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              stops: [0.2957, 0.9231],
+              colors: [Color(0xff374C97), Colors.black],
+            ),
+          ),
+        child: Center(child: Image.asset('assets/mp.png')) // Ganti path sesuai dengan lokasi gambar Anda) .
       ),
     );
   }
